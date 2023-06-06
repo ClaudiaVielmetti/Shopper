@@ -190,6 +190,7 @@ a#scrollUp i{
 	display:inline-block;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 20px;
 }
 
 .shop-menu ul li:last-child {
