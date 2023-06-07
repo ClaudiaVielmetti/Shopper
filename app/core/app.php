@@ -10,7 +10,7 @@ class App
     {
 
         $url = $this->parseURL();    // assign the value of parseURL() function to url
-        print_r($url);    // print the value of url
+        show($url);    // print the value of url
 
     }
 
@@ -19,6 +19,6 @@ class App
     {
 
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';    // Check if url is set or not, if not then assign the value of url as "home"
-        return explode("/", $url);    // Split the url into array
+        return explode("/", filter_var(trim($url, "/"), FILTER_SANITIZE_URL));    // Split the url into array and filter the url(Sanitize)
     }
 }
