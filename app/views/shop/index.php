@@ -1,4 +1,4 @@
-
+<?php $this->view("shop/header"); ?>
 	
 	<section id="slider"><!--slider-->
 		<div class="container">
@@ -755,4 +755,4 @@
 			</div>
 		</div>
 	</section>
-	
+<?php $this->view("shop/footer"); ?>
