@@ -12,9 +12,8 @@ define('DB_PASS', "");
 //when in debug mode = true if not false
 define('DEBUG', true);
 
-if(DEBUG){
+if (DEBUG) {
     ini_set('display_errors', 1);
-    
-}else {
+} else {
     ini_set('display_errors', 0);
 }
