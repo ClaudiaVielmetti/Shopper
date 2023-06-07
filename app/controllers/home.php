@@ -4,7 +4,7 @@ class Home extends Controller
     public function index()
     {
        
-        $this->view("home"); // call the view method
+        $this->view("shop/index"); // call the view method
 
        
     }
