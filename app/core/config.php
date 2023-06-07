@@ -8,6 +8,7 @@ define('DB_NAME', "shop_db");
 define('DB_USER', "root");
 define('DB_PASS', "");
 
+define('THEME', "shop/");
 
 //when in debug mode = true if not false
 define('DEBUG', true);

@@ -7,21 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title><?php echo $data['page_title']; ?> | Reverse </title>
-    <link href="<?php echo ASSETS ?>shop/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/prettyPhoto.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/price-range.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/animate.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/main.css" rel="stylesheet">
-    <link href="<?php echo ASSETS ?>shop/css/responsive.css" rel="stylesheet">
+    <link href="<?php echo ASSETS . THEME ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/font-awesome.min.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/prettyPhoto.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/price-range.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/animate.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/main.css" rel="stylesheet">
+    <link href=" <?php echo ASSETS . THEME ?>css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="<?php echo ASSETS . THEME ?>js/html5shiv.js"></script>
+    <script src="<?php echo ASSETS . THEME ?>js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="<?php echo ASSETS ?>shop/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo ASSETS ?>shop/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo ASSETS ?>shop/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo ASSETS ?>shop/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="shortcut icon" href=" <?php echo ASSETS . THEME ?>images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href=" <?php echo ASSETS . THEME ?>images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href=" <?php echo ASSETS . THEME ?>images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href=" <?php echo ASSETS . THEME ?>images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="logo pull-left">
-                            <a href="index.html"><img src="<?php echo ASSETS ?>shop/images/home/reverse-black.png" alt="" /></a>
+                            <a href="index.html"><img src=" <?php echo ASSETS . THEME ?>images/home/reverse-black.png" alt="" /></a>
                         </div>
 
                     </div>
