@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home </title>
+    <title><?php echo $data['page_title']; ?> | Reverse </title>
     <link href="<?php echo ASSETS ?>shop/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo ASSETS ?>shop/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo ASSETS ?>shop/css/prettyPhoto.css" rel="stylesheet">
