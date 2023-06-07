@@ -19,6 +19,6 @@ class App
     {
 
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';    // Check if url is set or not, if not then assign the value of url as "home"
-        return $url;    // Return the value of url
+        return explode("/", $url);    // Split the url into array
     }
 }
