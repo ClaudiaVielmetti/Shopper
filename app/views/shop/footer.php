@@ -13,7 +13,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="<?php echo ASSETS ?>shop/images/home/iframe1.png" alt="" />
+                                    <img src=" <?php echo ASSETS . THEME ?>images/home/iframe1.png" alt="" />
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -28,7 +28,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="<?php echo ASSETS ?>shop/images/home/iframe2.png" alt="" />
+                                    <img src=" <?php echo ASSETS . THEME ?>images/home/iframe2.png" alt="" />
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -43,7 +43,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="<?php echo ASSETS ?>shop/images/home/iframe3.png" alt="" />
+                                    <img src=" <?php echo ASSETS . THEME ?>images/home/iframe3.png" alt="" />
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -58,7 +58,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="<?php echo ASSETS ?>shop/images/home/iframe4.png" alt="" />
+                                    <img src=" <?php echo ASSETS . THEME ?>images/home/iframe4.png" alt="" />
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="address">
-                        <img src="<?php echo ASSETS ?>shop/images/home/map.png" alt="" />
+                        <img src=" <?php echo ASSETS . THEME ?>images/home/map.png" alt="" />
                         <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
                     </div>
                 </div>
@@ -158,12 +158,12 @@
 
 
 
-<script src="<?php echo ASSETS ?>shop/js/jquery.js"></script>
-<script src="<?php echo ASSETS ?>shop/js/bootstrap.min.js"></script>
-<script src="<?php echo ASSETS ?>shop/js/jquery.scrollUp.min.js"></script>
-<script src="<?php echo ASSETS ?>shop/js/price-range.js"></script>
-<script src="<?php echo ASSETS ?>shop/js/jquery.prettyPhoto.js"></script>
-<script src="<?php echo ASSETS ?>shop/js/main.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/jquery.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/bootstrap.min.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/jquery.scrollUp.min.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/price-range.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/jquery.prettyPhoto.js"></script>
+<script src=" <?php echo ASSETS . THEME ?>js/main.js"></script>
 </body>
 
 </html>
