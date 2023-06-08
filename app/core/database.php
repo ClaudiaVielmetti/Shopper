@@ -37,6 +37,3 @@ class Database
 
 }
 
-$db = Database::getInstance();
-
-show($db);
