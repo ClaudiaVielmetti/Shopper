@@ -16,7 +16,7 @@
 						<button type="submit" class="btn btn-default">Login</button>
 					</form>
 					<br>
-					<a href="signup" >Sign-up Here!</a>
+					<a href="<?php echo ROOT; ?>signup" >Sign-up Here!</a>
 				</div><!--/login form-->
 			</div>
 
