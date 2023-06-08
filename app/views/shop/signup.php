@@ -9,9 +9,10 @@
                 <div class="signup-form"><!--sign up form-->
                     <h2>New User Signup!</h2>
                     <form method="POST">
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email Address" />
-                        <input type="password" placeholder="Password" />
+                        <input  name="name"  type="text" placeholder="Name" />
+                        <input  name="email" type="email" placeholder="Email Address" />
+                        <input  name="password" type="password" placeholder="Password" />
+                        <input  name="password2" type="password" placeholder="Re-type Password" />
                         <button type="submit" class="btn btn-default">Signup</button>
                     </form>
                 </div><!--/sign up form-->
