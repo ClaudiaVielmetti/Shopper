@@ -2,11 +2,17 @@
 class User
 {
 
-    public function Signup($POST)
+    public function signup($POST)
     {
+        $username = $POST['username'];
+        $email = $POST['email'];
+        $password = $POST['password'];
+        $password2 = $POST['password2'];
+
+        
     }
 
-    public function Login($POST)
+    public function login($POST)
     {
     }
 
