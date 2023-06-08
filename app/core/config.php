@@ -7,6 +7,7 @@ define("WEBSITE_TITLE", "REVERSE");
 define('DB_NAME', "shop_db");
 define('DB_USER', "root");
 define('DB_PASS', "");
+define('DB_TYPE', "mysql");
 
 define('THEME', "shop/");
 
