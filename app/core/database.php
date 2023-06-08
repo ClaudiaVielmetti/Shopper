@@ -11,8 +11,8 @@ class Database
     public function __construct()
     {
         try {
-            $string = "mysql:host=localhost;dbname=shop_db;charset=utf8";
-            self::$con = new PDO($string, "root", "");
+            $string = DB_TYPE . ":host=". DB_HOST ."; dbname=". DB_NAME;
+            self::$con = new PDO($string,DB_USER,DB_PASS);
 
         } catch (PDOException $e) {
             die($e->getMessage());
