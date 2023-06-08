@@ -1,64 +1,79 @@
-<?php
+<?php 
 
-class Database
-{    ///
-    // Constructs a new instance of the class, initializing a connection to the
-    // MySQL database.
+Class Database
+{
 
-    // @throws PDOException if the database connection cannot be established
+	/*
+	*
+	* This is the database class
+	*/
+	public static $con;
 
-    public static $con;
-    public function __construct()
-    {
-        try {
-            $string = DB_TYPE . ":host=" . DB_HOST . "; dbname=" . DB_NAME;
-            self::$con = new PDO($string, DB_USER, DB_PASS);
-        } catch (PDOException $e) {
-            die($e->getMessage());
-        }
-    }
+	public function __construct()
+	{
+		try{
+ 
+			$string = DB_TYPE . ":host=". DB_HOST .";dbname=". DB_NAME;
+			self::$con = new PDO($string,DB_USER,DB_PASS);
 
-    //Retrieves the instance of the class if it exists, otherwise creates it.
+		}catch (PDOException $e){
 
-    // @throws Some_Exception_Class Exception thrown if the instance cannot be created
-    // @return self Returns the instance of the class
+			die($e->getMessage());
+		}
+	}
 
-    public static function getInstance()
-    {
-        if (self::$con) {
+	public static function getInstance()
+	{
+		if(self::$con){
 
-            return self::$con;
-        }
+			//return self::$con;
+		}
 
-        return $instance = new self();
-    }
+		return $instance = new self();
+ 	}
 
-    //read
-    public function read($query, $data = array())
-    {
-        $stm = self::$con->prepare($query);
-        $result = $stm->execute($data);
-
-        if ($result) {
-            $data = $stm->fetchAll(PDO::FETCH_OBJ);
-            if (is_array($data)) {
-                return $data;
-            }
-            return false;
-        }
-    }
+ 	public static function newInstance()
+	{
+		return $instance = new self();
+ 	}
 
 
-    //write
-    public function write($query, $data = array())
-    {
-        $stm = self::$con->prepare($query);
-        $result = $stm->execute($data);
+	/*
+	* read from database
+	*/
+	public function read($query,$data = array())
+	{
 
-        if ($result) {
+		$stm = self::$con->prepare($query);
+		$result = $stm->execute($data);
 
-            return true;
-        }
-        return false;
-    }
+		if($result){
+			$data = $stm->fetchAll(PDO::FETCH_OBJ);
+			if(is_array($data) && count($data) > 0)
+			{
+				return $data;
+			}
+		}
+
+		return false;
+	}
+
+	/*
+	* write to database
+	*/
+	public function write($query,$data = array())
+	{
+
+		$stm = self::$con->prepare($query);
+		$result = $stm->execute($data);
+
+		if($result){
+			 
+			return true;
+ 		}
+
+		return false;
+	}
+
+ 
 }
