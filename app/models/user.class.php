@@ -91,7 +91,7 @@ Class User
  
  		if(strlen($data['password']) < 4)
 		{
-			$this->error .= "Password must be atleast 4 characters long <br>";
+			$this->error .= "Password must be at least 4 characters long <br>";
 		}
 
   		if($this->error == ""){
