@@ -96,7 +96,7 @@ Class User
 
   		if($this->error == ""){
 
-			//comfirm
+			//confirm
  			$data['password'] = hash('sha1',$data['password']);
 
 			//check if email already exists
