@@ -35,7 +35,10 @@
                             <ul class="nav nav-pills">
                                 <li><a href="#"><i class="fa fa-phone"></i> 012 3456 326</a></li>
                                 <li><a href="#"><i class="fa fa-envelope"></i> info@reverse.com</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> <?php echo $data['user_data'] -> name ?></i></a></li>
+                                <?php if (isset($data['user_data'])) : ?>
+                                    <li><a href="#"><i class="fa fa-user"></i> <?php echo $data['user_data']->name ?></i></a></li>
+
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +73,14 @@
                                 <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
                                 <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
                                 <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                <li><a href="login"><i class="fa fa-lock"></i> Login</a></li>
+
+                                <?php if (isset($data['user_data'])) : ?>
+                                    <li><a href="logout"><i class="fa fa-lock"></i> Log-out</a></li>
+
+                                <?php else : ?>
+
+                                    <li><a href="login"><i class="fa-duotone fa-lock-open"></i> Login</a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>
