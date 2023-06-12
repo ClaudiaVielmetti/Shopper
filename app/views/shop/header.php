@@ -35,7 +35,7 @@
                             <ul class="nav nav-pills">
                                 <li><a href="#"><i class="fa fa-phone"></i> 012 3456 326</a></li>
                                 <li><a href="#"><i class="fa fa-envelope"></i> info@reverse.com</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> <?php echo $_SESSION['user_url']; ?></i></a></li>
+                                <li><a href="#"><i class="fa fa-user"></i> <?php echo $data['user_data'] -> name ?></i></a></li>
                             </ul>
                         </div>
                     </div>
