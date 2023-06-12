@@ -75,7 +75,7 @@
                                 <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 
                                 <?php if (isset($data['user_data'])) : ?>
-                                    <li><a href="logout"><i class="fa fa-lock"></i> Log-out</a></li>
+                                    <li><a href="logout"><i class="fa fa-lock"></i> Logout</a></li>
 
                                 <?php else : ?>
 

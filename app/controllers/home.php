@@ -4,9 +4,9 @@ class Home extends Controller
     public function index()
     {
         $user = $this->load_model('User');
-        $data['user_data'] = $user_data = $user->check_login();
+        $user_data = $user->check_login();
 
-        if(is_array($data['user_data']))
+        if(is_array($user_data))
         {
             $data['user_data'] = $user_data;
         }
