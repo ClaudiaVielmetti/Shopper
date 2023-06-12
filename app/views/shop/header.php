@@ -79,7 +79,7 @@
 
                                 <?php else : ?>
 
-                                    <li><a href="login"><i class="fa-duotone fa-lock-open"></i> Login</a></li>
+                                    <li><a href="login"><i class="fa fa-key"></i> Login</a></li>
                                 <?php endif; ?>
                             </ul>
                         </div>
