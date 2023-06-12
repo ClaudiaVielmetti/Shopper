@@ -31,7 +31,7 @@ Class User
 
 		if(strlen($data['password']) < 4)
 		{
-			$this->error .= "Password must be atleast 4 characters long <br>";
+			$this->error .= "Password must be at least 4 characters long <br>";
 		}
 
 		//check if email already exists
@@ -154,25 +154,6 @@ Class User
 		return false;
 	}
 	
-	public function get_admins()
-	{
-
-		$db = Database::newInstance();
-		$arr = false;
-
-		$arr['rank'] = "admin";
-		$query = "select * from users where rank = :rank ";
-
-		$result = $db->read($query,$arr);
-		
-		if(is_array($result))
-		{
-			return $result;
-		}
-
-		return false;
-	}
-
 
 	private function get_random_string_max($length) {
 

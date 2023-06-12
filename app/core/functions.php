@@ -1,11 +1,19 @@
-<?php
-//declare  the function show
+<?php 
+
+
 function show($data)
 {
-    // print pre-tag
-    echo "<pre>";
-    //print data in readable format
-    print_r($data);
-    // print post-tag
-    echo "</pre>";
+	echo "<pre>";
+	print_r($data);
+	echo "</pre>";
+}
+
+function check_error()
+{
+
+	if(isset($_SESSION['error']) && $_SESSION['error'] != "")
+	{
+		echo $_SESSION['error'];
+		unset($_SESSION['error']);
+	}
 }
