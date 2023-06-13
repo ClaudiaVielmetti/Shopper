@@ -56,7 +56,7 @@
                             <p id="user_text" class="small mt" style="cursor: pointer;color: #13b8ea;"><i class="fa fa-edit"></i> EDIT</p>
                         </div>
                         <div class="col-md-6">
-                            <p id="user_text" class="small mt" style="cursor: pointer;color:#e18b57;">DELETE</p>
+                            <p id="user_text" class="small mt" style="cursor: pointer;color:#e18b57;"><i class="fa fa-trash-o"></i> DELETE</p>
                         </div>
                     </div>
                 </div><!-- /col-md-4 -->
