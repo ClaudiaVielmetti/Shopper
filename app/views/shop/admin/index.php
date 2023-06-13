@@ -357,7 +357,7 @@
 										];
 										var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
 								</script>
-	                      	</div><! --/grey-panel -->
+	                      	</div>
                       	</div><!-- /col-md-4-->
                       	
 
