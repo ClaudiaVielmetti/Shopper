@@ -32,7 +32,6 @@
                     display: none;
                 }
             </style>
-
             <div class="col-md-4 mb" style="flex:1;background-color: #eee;text-align: center;box-shadow: 0px 0px 20px #aaa; border: solid thin #ddd;">
                 <!-- WHITE PANEL - TOP USER -->
                 <div class="white-panel pn">
@@ -40,11 +39,11 @@
                         <h5>TOP USER</h5>
                     </div>
                     <p><img src="<?= ASSETS . THEME ?>admin/img/ui-zac.jpg" class="img-circle" width="80"></p>
-                    <p><b>Zac Snider</b></p>
+                    <p><b><?=$data['user_data']->name?></b></p>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="small mt">MEMBER SINCE</p>
-                            <p>2012</p>
+                            <p><?=date("jS M Y", strtotime($data['user_data']->date))?></p>
                         </div>
                         <div class="col-md-6">
                             <p class="small mt">TOTAL SPEND</p>
