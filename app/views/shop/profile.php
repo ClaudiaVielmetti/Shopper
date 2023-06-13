@@ -36,7 +36,7 @@
             <div class="col-md-4 mb" style="flex:1;background-color: #eee;text-align: center;box-shadow: 0px 0px 20px #aaa; border: solid thin #ddd;">
                 <!-- WHITE PANEL - TOP USER -->
                 <div class="white-panel pn">
-                    <div class="white-header"style="color:grey">
+                    <div class="white-header" style="color:grey">
                         <h5>TOP USER</h5>
                     </div>
                     <p><img src="<?= ASSETS . THEME ?>admin/img/ui-zac.jpg" class="img-circle" width="80"></p>
@@ -51,11 +51,19 @@
                             <p>$ 47,60</p>
                         </div>
                     </div>
-                </div>
-            </div><!-- /col-md-4 -->
+                    <hr style="color:#888">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p id="user_text" class="small mt" style="cursor: pointer;color: #13b8ea;"><i class="fa fa-edit"></i> EDIT</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p id="user_text" class="small mt" style="cursor: pointer;color:#e18b57;">DELETE</p>
+                        </div>
+                    </div>
+                </div><!-- /col-md-4 -->
 
 
-        </div><!-- /row -->
+            </div><!-- /row -->
 
 
         </div>
