@@ -6,7 +6,7 @@ class Home extends Controller
         $user = $this->load_model('User');
         $user_data = $user->check_login();
 
-        if(is_array($user_data))
+        if(is_object($user_data))
         {
             $data['user_data'] = $user_data;
         }
