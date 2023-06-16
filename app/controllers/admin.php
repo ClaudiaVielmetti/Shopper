@@ -33,7 +33,7 @@ class Admin extends Controller
  		$categories = $DB->read("select * from categories where disabled = 0 order by id desc");
 
 		$category = $this->load_model("Category");
-		$tbl_rows = $category->make_table($categories_all);
+		// $tbl_rows = $category->make_table($categories_all);
 		$data['tbl_rows'] = $tbl_rows;
 		$data['categories'] = $categories;
 	 
