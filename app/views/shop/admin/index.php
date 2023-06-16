@@ -3,7 +3,7 @@
 
 
 
-    <p>Place your content here.</p>
-         
+<p>Main admin page.</p>
+
 
 <?php $this->view("admin/footer", $data); ?>
