@@ -1,3 +1,5 @@
+<?php $this->view("admin/header", $data); ?>
+<?php $this->view("admin/sidebar", $data); ?>
 
 
 <!-- **********************************************************************************************************************************************************
@@ -18,3 +20,5 @@
 </section><!-- /MAIN CONTENT -->
 
 <!--main content end-->
+
+<?php $this->view("admin/footer", $data); ?>
