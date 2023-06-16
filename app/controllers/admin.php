@@ -34,7 +34,7 @@ class Admin extends Controller
 
 		$category = $this->load_model("Category");
 		// $tbl_rows = $category->make_table($categories_all);
-		$data['tbl_rows'] = $tbl_rows;
+		// $data['tbl_rows'] = $tbl_rows;
 		$data['categories'] = $categories;
 	 
 		$data['page_title'] = "Admin - Categories";
