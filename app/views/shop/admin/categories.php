@@ -33,6 +33,8 @@
         display: none;
     }
 </style>
+
+
 <div class="row mt">
     <div class="col-md-12">
         <div class="content-panel">
@@ -126,7 +128,7 @@
                 </thead>
                 <tbody id="table_body">
 
-                    <?= $tbl_rows ?>
+                    <!-- <?= $tbl_rows ?> -->
 
                 </tbody>
             </table>
