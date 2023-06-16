@@ -1,18 +1,13 @@
-<?php
-session_start(); //start a session
+<?php 
 
+session_start();
 
+$path = $_SERVER['REQUEST_SCHEME'] . "://". $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
+$path = str_replace("index.php", "", $path);
 
+define('ROOT', $path);
+define('ASSETS', $path . "assets/");
 
-$path = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF']; //Define server path
-$path = str_replace("index.php", "", $path); //Replace index.php with blank string
+include "../app/init.php";
 
-
-define('ROOT', $path); //Define Root constant
-define('ASSETS', $path . "assets/");  // Define Assets constant
-include "../app/init.php"; //Include ini.php file
-
-
-
-//initializing the app
-$app = new App(); 
+$app = new App();
