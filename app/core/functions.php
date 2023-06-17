@@ -17,3 +17,15 @@ function check_error()
 		unset($_SESSION['error']);
 	}
 }
+
+function esc($data)
+{
+	return addslashes($data);
+}
+
+function redirect($link)
+{
+	header("Location: " . ROOT . $link);
+	die;
+}
+
