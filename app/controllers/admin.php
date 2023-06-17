@@ -56,10 +56,10 @@ class Admin extends Controller
 
  		$categories = $DB->read("select * from categories where disabled = 0 order by id desc");
 
-		$products = $this->load_model("Product");
+		$product = $this->load_model("Product");
 		$category = $this->load_model("Category");
 		
-		$tbl_rows = $products->make_table($products,$category);
+		$tbl_rows = $product->make_table($products,$category);
 		$data['tbl_rows'] = $tbl_rows;
 		$data['categories'] = $categories;
 	 
