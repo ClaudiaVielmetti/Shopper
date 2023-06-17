@@ -58,7 +58,7 @@ Class Admin extends Controller
 		$product = $this->load_model("Product");
 		$category = $this->load_model("Category");
 		
-		$tbl_rows = $product->make_table($products,$category);
+		$tbl_rows = $product->make_table($product,$category);
 		$data['tbl_rows'] = $tbl_rows;
 		$data['categories'] = $categories;
 	 
