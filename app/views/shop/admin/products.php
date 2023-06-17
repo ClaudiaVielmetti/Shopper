@@ -231,7 +231,7 @@
                 </thead>
                 <tbody id="table_body">
 
-                    <?= $tbl_rows ?>
+                    <!-- <?= $tbl_rows ?> -->
 
                 </tbody>
             </table>
