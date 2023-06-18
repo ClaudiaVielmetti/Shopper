@@ -107,7 +107,7 @@
 
 								<li><a href="<?= ROOT ?>index" class="<?= $page_title == "Home" ? "active" : ""; ?>">Home</a></li>
 								<li class="dropdown"><a href="<?= ROOT ?>shop" class="<?= $page_title == "Shop" ? "active" : ""; ?>">Shop</a></li>
-								<li class="dropdown"><a href="<?= ROOT ?>look-book" class="<?= $page_title == "look-book" ? "active" : ""; ?>">Look-Book</a></li>
+								<li class="dropdown"><a href="<?= ROOT ?>look-book" class="<?= $page_title == "look-book" ?>">Look-Book</a></li>
 								<li><a href="<?= ROOT ?>contact-us" class="<?= $page_title == "Contact-us" ? "active" : ""; ?>">Contact</a></li>
 								
 							
