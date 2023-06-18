@@ -75,6 +75,7 @@
 								
 								<li><a href="<?= ROOT ?>checkout"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="<?= ROOT ?>cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="look-book"><i class="fa fa-book"></i> Look-book</a></li>
 
 								<?php if (isset($data['user_data'])) : ?>
 									<li><a href="<?= ROOT ?>logout"><i class="fa fa-lock"></i> Logout</a></li>

@@ -54,9 +54,9 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a <?=(isset($current_page) && $current_page == "blogs") ? ' class="active" ':''; ?> href="<?=ROOT?>admin/blogs" >
+                      <a <?=(isset($current_page) && $current_page == "look-book") ? ' class="active" ':''; ?> href="<?=ROOT?>admin/look-book" >
                           <i class="fa fa-email-o"></i>
-                          <span>Blogs</span>
+                          <span>Look-Book</span>
                       </a>
                   
                   </li>
