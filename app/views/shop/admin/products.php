@@ -472,7 +472,7 @@
 		ajax.send(JSON.stringify(data));
 	}
 
-	function send_data_files(FormData)
+	function send_data_files(formdata)
 	{
 
  		var ajax = new XMLHttpRequest();
@@ -486,7 +486,7 @@
 		});
 
 		ajax.open("POST","<?=ROOT?>ajax_product",true);
-		ajax.send(FormData);
+		ajax.send(formdata);
 	}
 
 	
