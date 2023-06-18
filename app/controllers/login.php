@@ -1,19 +1,21 @@
-<?php
-class Login extends Controller
+<?php 
+
+Class Login extends Controller
 {
-    public function index()
-    {
-        $data['page_title'] = "Home"; // set the page title
-        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
+	public function index()
+	{
+		$data['page_title'] = "Login";
+		
+		if($_SERVER['REQUEST_METHOD'] == "POST")
+		{
+ 			
+			$user = $this->load_model("User");
+			$user->login($_POST);
+		}
+
+		$this->view("login",$data);
+	}
 
 
-            $User = $this->load_model("User");
-            $User->login($_POST);
-        }
-
-
-        $this->view("login", $data); // call the view method
-
-
-    }
 }

@@ -1,20 +1,22 @@
-<?php
-class Signup extends Controller
+<?php 
+
+Class Signup extends Controller
 {
-    public function index()
-    {
-        $data['page_title'] = "Home"; // set the page title
 
-        if($_SERVER['REQUEST_METHOD'] == "POST")
-        {
-        
+	public function index()
+	{
 
-            $User = $this->load_model("User");
-            $User->signup($_POST);
-        }
+		$data['page_title'] = "Signup";
 
-        $this->view("signup", $data); // call the view method
+		if($_SERVER['REQUEST_METHOD'] == "POST")
+		{
+ 			
+			$user = $this->load_model("User");
+			$user->signup($_POST);
+		}
+
+		$this->view("signup",$data);
+	}
 
 
-    }
 }
