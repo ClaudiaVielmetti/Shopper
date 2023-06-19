@@ -77,12 +77,8 @@ if (isset($errors) && count($errors) > 0) {
 											<?php endforeach; ?>
 										<?php endif; ?>
 									</select><br><br>
-									<select name="state" value="<?= $state ?>" class="js-state" required>
-										<?php if ($state == "") {
-											echo "<option>-- State / Province / Region --</option>";
-										} else {
-											echo "<option>$state</option>";
-										} ?>
+									<select name="state" value="<?= $state ?>" class="js-state">
+										
 
 
 									</select><br><br>

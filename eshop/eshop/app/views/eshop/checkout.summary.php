@@ -39,7 +39,7 @@
 										<table class="table" style="flex: 1;margin: 4px;">
 
 											<tr><th>Country</th><td><?=$order->country?></td></tr>
-											<tr><th>State</th><td><?=$order->state?></td></tr>
+											
 											<tr><th>Delivery Address 1</th><td><?=$order->address1?></td></tr>
 											<tr><th>Delivery Address 2</th><td><?=$order->address2?></td></tr>
 											
